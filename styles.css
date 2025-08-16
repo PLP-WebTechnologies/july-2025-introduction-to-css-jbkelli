@@ -1,0 +1,153 @@
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #756d6d;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and navigation */
+header {
+    background: #2d3e50;
+    color: #fff;
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header img {
+    height: 60px;
+    margin-left: 24px;
+    border-radius: 8px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin-right: 24px;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 12px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+header ul li a:hover {
+    background: #415a77;
+}
+
+/* Section styling */
+section {
+    background: #fff;
+    margin: 32px auto;
+    padding: 24px;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+}
+
+section h1 {
+    color: #2d3e50;
+    margin-bottom: 12px;
+}
+
+section ol{
+    font-weight: bold;
+}
+
+section ul{
+    font-weight: lighter;
+}
+
+section p, section ol, section ul {
+    margin-bottom: 16px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    background: #f9f9f9;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #bbb;
+    text-align: left;
+}
+
+th {
+    background: #415a77;
+    color: #fff;
+}
+
+/* Form styling */
+form {
+    margin-top: 16px;
+}
+
+fieldset {
+    border: 1.5px solid #415a77;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+}
+
+legend {
+    font-weight: bold;
+    color: #2d3e50;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 6px;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    width: 60%;
+    font-size: 1em;
+}
+
+button[type="submit"] {
+    background: #415a77;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 8px;
+}
+
+button[type="submit"]:hover {
+    background: #2d3e50;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px 0;
+    background: #2d3e50;
+    color: #fff;
+    margin-top: 32px;
+    border-radius: 0 0 10px 10px;
+}

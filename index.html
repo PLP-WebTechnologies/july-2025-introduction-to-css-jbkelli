@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alvin Maina">
+    <meta name="description" content="Showcasing the use of css in styling HTML">
+    <meta name="date" content="11th August 2025">
+    <meta name="keywords" content="styling using CSS, Showcasing the box model, linking external CSS">
+    <link rel="stylesheet" href="styles.css">
+    <title>Intro to CSS - CSS Styling</title>
+</head>
+<body>
+    <header id="Home">
+        <img src="JB.png" alt="Cool coding picture">
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Categories">Categories</a></li>
+            <li><a href="#Tables">Tabulated Info</a></li>
+            <li><a href="#Contact">Contact Form</a></li>
+        </ul>
+    </header>
+
+    <section id="About">
+
+        <h1>💡About Page</h1>
+        <p id="description">After researching on the various operating systems being used, both open source and closed source, </br>I have gathered some very amazing data about a few examples of these OSs. This may sound boring but with what I have, you'll be amazed 😸😸. You can listen to the song below as you read along, a preview though😸.</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1l0wPhFZP1kWkZNQrrYrGy?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </section>
+
+    <section id="Categories">
+        <h1>💻Categorizing operating systems</h1>
+        <p id="category">Well basically, operating systems are categorized in 4 different categories:
+            <ol>
+                <li>By Functionality
+                    <ul>
+                        <li>Desktop Operating Systems <span>(Windows, macOS, Linux)</span></li>
+                        <li>Mobile Operating Systems <span>(Android, iOS)</span></li>
+                        <li>Server Operating Systems <span>(Windows Server, Linux Server)</span></li>
+                        <li>Embedded Operating Systems (FreeRTOS, Embedded Linux)</li>
+                    </ul>
+                </li>
+                <li>By Usage
+                    <ul>
+                        <li>Single-User Opearting Systems <span>(Windows)</span></li>
+                        <li>Multi-User Operating Systems <span>(Unix, Linux)</span></li>
+                    </ul>
+                </li>
+                <li>By Architecture
+                    <ul>
+                        <li>Monolithic Operating Systems <span>(Linux, Windows)</span></li>
+                        <li>Microkernel Operating Systems <span>(QNX, Symbian)</span></li>
+                    </ul>
+                </li>
+                <li>Special-Purpose Operating Systems
+                    <ul>
+                        <li>Real-Time Operating Systems - RTOS <span>(VxWorks, FreeRTOS)</span></li>
+                        <li>Distributed Operating Systems <span>(Cloud computing)</span></li>
+                    </ul>
+                </li>
+            </ol>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fkGCLIQx1MI?si=Yofg_cL9I6R2VSIE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="Tables">
+        <h1>🗊Table of Comparison</h1>
+        <table border="1" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>Desktop Operating System</th>
+                    <th>Merits</th>
+                    <th>Demerits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1. Windows</td>
+                    <td>Widespread adoption, Compatible with various hardware and software, User-friendly interface</td>
+                    <td>Vulnerable to malware and viruses, can be resource-intensive, expensive</td>
+                </tr>
+                <tr>
+                    <td>2. Linux</td>
+                    <td>open-source, customizable, secure, community-driven development</td>
+                    <td>Steep learning curve, limited software availability, hardware compatibility issues</td>
+                </tr>
+                <tr>
+                    <td>3. macOS</td>
+                    <td>Sleek design, user-friendly interface, seamless integration with apple devices, secure</td>
+                    <td>Expensive, limited hardware compatibility, limited software availability</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="Contact">
+        <h1>🖁Contacts Section</h1>
+        <p>You have obviously learnt a lot about operating systems so feel free to reach out 👋🤩</p>
+
+        <form action="">
+            <fieldset>
+                <legend>Personal Data</legend>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Enter your first name here..." required>
+                <br><br>
+
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Enter your last name here...." required>
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email here....." autocomplete="email" required>
+                <br><br>
+
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" placeholder="Enter your age here....." required>
+                <br><br>
+
+                <label for="phonenumber">Phone Number:</label>
+                <input type="tel" name="phonenumber" id="phonenumber" required pattern="^[0-9]{10}" title="Enter a valid 10 digit mobile number" placeholder="07xxxxxxxx">
+                <br><br>
+
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="20" cols="30" placeholder="Type your message here" minlength="20" maxlength="100"></textarea>
+                <br><br>
+
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        Copyright©JBKelli
+    </footer>
+</body>
+</html>
